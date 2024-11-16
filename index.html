@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="majdilaayouni.com" content="width=device-width, initial-scale=1.0">
+    <title>Majdi Laayouni - Video Editor</title>
+    <style>
+        /* Reset default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .contact-info, .description, .portfolio {
+            background-color: white;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-info h2, .description h2, .portfolio h2 {
+            color: #4a90e2;
+            margin-bottom: 15px;
+        }
+
+        .contact-info a, .description a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .description p {
+            margin-bottom: 1em;
+            text-align: left;
+        }
+
+        .portfolio {
+            padding-top: 20px;
+        }
+
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .video-item {
+            width: 100%;
+            max-width: 300px;
+            transform: scale(0.9);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+        }
+
+        .video-item video {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-item p {
+            margin-top: 8px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        /* Hover effect */
+        .video-item:hover {
+            transform: scale(1) translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animation when visible */
+        .video-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="438328768_1142829016871688_6197366221325222805_n.jpg" alt="Majdi Laayouni Logo" class="logo">
+        </div>
+        <h1>Majdi Laayouni</h1>
+        <p class="tagline">Professional Video Editor</p>
+    </header>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:laayounimajdi@gmail.com">laayounimajdi@gmail.com</a></p>
+        <p>Phone: <a href="tel:+21620326152">+216 20 326 152</a></p>
+    </section>
+
+    <section class="description">
+        <h2>About Me</h2>
+        <p>
+            Are you seeking to enhance your brand or project with compelling video content? Hi, I'm Majdi, a skilled video editor experienced in transforming ideas into visually captivating videos.
+        </p>
+        <p>
+            With expertise in video editing software and a keen eye for detail, I offer comprehensive video editing services tailored to your needs. Whether you're creating promotional videos, tutorials, or social media content, I can bring your vision to life.
+        </p>
+        <p>
+            What sets me apart is my commitment to full project management. From storyboard development to final editing touches, I handle every aspect of your video production. Expect regular communication and updates throughout the process because your satisfaction is my priority.
+        </p>
+        <p>
+            Let's elevate your brand or project with impactful video content. Contact me today, and let's discuss how I can enhance your storytelling through professional video editing.
+        </p>
+    </section>
+
+    <section class="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="videos">
+            <div class="video-item">
+                <video controls>
+                    <source src="New style-20241114T202131Z-001/New style/0522.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Project Title 1</p>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="New style-20241114T202131Z-001/New style/VID-20240731-WA0004.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Project Title 2</p>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="New style-20241114T202131Z-001/New style/0524.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Project Title 3</p>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="New style-20241114T202131Z-001/New style/lv_0_٢٠٢٤٠٥٢٢١٨١٧٤٩.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Project Title 4</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Majdi Laayouni. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add visibility class when video enters viewport
+        document.addEventListener("DOMContentLoaded", () => {
+            const videoItems = document.querySelectorAll(".video-item");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            });
+
+            videoItems.forEach(item => observer.observe(item));
+        });
+    </script>
+</body>
+</html>
